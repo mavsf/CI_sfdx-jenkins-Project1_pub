@@ -48,9 +48,9 @@ node {
 	    // v1 - when package.xml in force-app/main/default
 	         // rmsg = bat returnStdout: true, script: "\"${toolbelt}\\sfdx\" force:mdapi:deploy --wait 10 -d force-app/main/default/. -u ${HUB_ORG}"
 		 // rmsg = bat returnStdout: true, script: "\"${toolbelt}\\sfdx\" force:mdapi:deploy --wait 5 -d force-app/main/default/ -u ${HUB_ORG}"
-	    // v2 - when package.xml in manifest   
-		rmsg = bat returnStdout: true, script: "\"${toolbelt}\\sfdx\" force:mdapi:deploy --wait 10 -d manifest/. -u ${HUB_ORG}"
-	//rmsg = bat returnStdout: true, script: "\"${toolbelt}\\sfdx\" force:mdapi:deploy --wait 10 -d force-app/main -u ${HUB_ORG}"
+	    // v2 - when package.xml in manifest   - /
+		rmsg = bat returnStdout: true, script: "\"${toolbelt}\\sfdx\" force:mdapi:deploy --wait 10 -d force-app/. -u ${HUB_ORG}"
+	      //rmsg = bat returnStdout: true, script: "\"${toolbelt}\\sfdx\" force:mdapi:deploy --wait 10 -d force-app/main -u ${HUB_ORG}"
 		// rc = command "${toolbelt}/sfdx force:mdapi:deploy --wait 10 --deploydir ${DEPLOYDIR} --targetusername UAT --testlevel ${TEST_LEVEL}"
     
 	    }
